@@ -242,15 +242,12 @@ nav {
   width: 6px; height: 6px;
   border-radius: var(--radius-full);
   background: var(--color-primary);
-  animation: pulse-dot 2s infinite;
+  animation: pulse-dot 2s ease-out infinite;
 }
 @keyframes pulse-dot {
-  0% {
-    box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.2);
-  }
-  100% {
-    box-shadow: 0 0 0 20px rgba(0, 0, 0, 0);
-  }
+  0% { box-shadow: 0 0 0 0px rgba(212, 255, 78, 0.6); }
+  100% { box-shadow: 0 0 0 20px rgba(212, 255, 78, 0); }
+}
 .hero-title {
   font-family: var(--font-display);
   font-size: var(--text-hero);
@@ -757,7 +754,7 @@ footer {
             AFAA-minősített Online Coach
           </div>
           <h1 class="hero-title" id="hero-heading">
-            Az<br><span class="accent">izmaid</span>épóljenek<br>Nem a félelmeid.
+             Az izmaid<br>épüljenek, ne a <span class="accent">félelmeid.
           </h1>
           <p class="hero-desc">
             Napi 1 óra. Heti 4 nap. Valódi progresszió. Ha kezdő vagy és nem tudod hol állj neki — pontosan neked csináltam ezt a programot.
